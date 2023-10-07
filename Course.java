@@ -1,4 +1,4 @@
-package com.cms.collgmangsystem.entity;
+package com.gitm.collegemanagementsystem.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,7 +15,7 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String courseName;
-    // Other fields, getters, setters, and constructors
+    private String name;
+    private double fee;
     
 }

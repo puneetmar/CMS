@@ -1,22 +1,12 @@
-package com.cms.collgmangsystem.repository;
+package com.gitm.collegemanagementsystem.repository;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.cms.collgmangsystem.entity.Course;
+import com.gitm.collegemanagementsystem.entity.Course;
 
 @Repository
-public class CourseRepository {
-
-    @Autowired
-    private  JdbcTemplate jdbcTemplate;
-
-    public Course save(Course course) {
-        return null;
-    }
-
-
-    // Implement methods for course data access
+public interface CourseRepository extends JpaRepository<Course, Long> {
     
+    // Custom query methods if needed
 }
